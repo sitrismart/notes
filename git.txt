@@ -1,0 +1,27 @@
+https://www.youtube.com/watch?v=QE_mkDiu4hE
+git init: tạo một repository Git mới trong một thư mục hiện có
+git status
+git add
+git reset: xoá các git add đã lưu
+git commit, git commit -m "" (mới bắt đầu dự án thường là initial commit)
+git log: xem những commit và id của commit, git log -- oneline: hiển thị rút gọn của git log
+git checkout {idcommit}: để trở lại các commit trước, git checkout {branchname}: để trở lại hiện tại, hoặc chuyển qua branch khác
+git branch: để hiển thị các branch đang có
+git checkout -b {branchname}: để tạo branch mới dựa trên branch đang đứng
+git merge {branchname}: để tổng hợp branchname vào branch hiện tại
+git merge --countinue --no edit: sau khi handle conflict merge với tin nhắn mặc định của github
+git merge --countinue, sau đó git commit -m "": để commit với thông điệp như bth
+git branch -d {branchname}: xoá branch
+git push {link} {branchname}: đẩy local lên remote lúc mới tạo
+git remote add origin {link}: tạo tên đường hướng dẫn tới repo là origin (dùng khi repo tạo trước ở máy) -> khi push chỉ cần git push origin {branchname}
+git clone {link repo}: clone repo về máy
+git push -u origin {branchname}: đẩy 1 branch lên github (chỉ cần dùng lúc đầu)
+git fetch origin: fetch branch về, git checkout -b staging origin/staging: để kéo branch staging về máy
+git fetch: Chỉ tải về thay đổi từ remote nhưng không hợp nhất vào nhánh hiện tại
+git pull: Kết hợp cả git fetch và git merge (tự động hợp nhất các thay đổi vào nhánh hiện tại).
+
+Tạo ra file .gitignore: .đuôi để k commit file này
+# Bỏ qua tất cả các file `.log`
+*.log
+# Bỏ qua thư mục `node_modules`
+node_modules/
