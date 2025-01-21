@@ -10,8 +10,7 @@
 
 ## Git Commit and Log
 - `git commit`: Thực hiện commit.
-- `git commit -m "message"`: Commit với thông điệp mô tả.
-- **Lưu ý**: Mới bắt đầu dự án, thường là `initial commit`.
+- `git commit -m "message"`: Commit với thông điệp mô tả. Mới bắt đầu dự án thường là `initial commit`.
 - `git log`: Xem các commit và ID của commit.
 - `git log --oneline`: Hiển thị các commit dưới dạng rút gọn.
 
